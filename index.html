@@ -1,204 +1,211 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m00 tvrek - متجر الملابس العصري</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Cairo', sans-serif; background-color: #f9fafb; }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
-      height: 400px;
-      border-radius: 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 0 40px;
-      color: white;
-      text-align: right;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>m00 tvrek - Street Fashion</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- الشريط العلوي -->
-  <header class="bg-white shadow-sm sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center gap-2">
-        <h1 class="text-xl font-extrabold">m00 tvrek</h1>
-        <span class="text-gray-500 text-sm hidden md:inline">تشكيلة ربيع 2025</span>
-      </div>
-      <nav class="hidden md:flex gap-4 text-sm">
-        <a href="#products" class="hover:text-gray-700">المنتجات</a>
-        <a href="#men" class="hover:text-gray-700">رجالي</a>
-        <a href="#women" class="hover:text-gray-700">نسائي</a>
-        <a href="#offers" class="hover:text-gray-700">عروض</a>
-      </nav>
-      <div class="flex items-center gap-2">
-        <input type="text" placeholder="ابحث عن منتج..." class="border rounded-lg px-3 py-1 text-sm">
-        <button class="p-2 rounded-full hover:bg-gray-100">🛒</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- القسم الرئيسي -->
-  <section class="max-w-7xl mx-auto mt-6 px-4">
-    <div class="hero">
-      <div class="hero-overlay">
-        <div>
-          <h2 class="text-3xl font-bold mb-2">تسوق الأناقة مع m00 tvrek</h2>
-          <p class="text-sm mb-4">أفضل تشكيلة ملابس بأسعار مميزة وتوصيل سريع</p>
-          <a href="#products" class="bg-white text-black px-4 py-2 rounded-lg font-medium">ابدأ التسوق</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- المنتجات -->
-  <section id="products" class="max-w-7xl mx-auto mt-12 px-4">
-    <h3 class="text-2xl font-bold mb-6">المنتجات</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-white rounded-2xl shadow hover:shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=800&q=60" alt="جاكيت" class="w-full h-64 object-cover rounded-lg">
-        <div class="mt-3 font-medium">جاكيت جلد فاخر</div>
-        <div class="text-gray-500 text-sm">245 ج.م</div>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow hover:shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=60" alt="قميص" class="w-full h-64 object-cover rounded-lg">
-        <div class="mt-3 font-medium">قميص قطني كلاسيكي</div>
-        <div class="text-gray-500 text-sm">499 ج.م</div>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow hover:shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1542062703-6f60f7050fbe?auto=format&fit=crop&w=800&q=60" alt="فستان" class="w-full h-64 object-cover rounded-lg">
-        <div class="mt-3 font-medium">فستان سهرة</div>
-        <div class="text-gray-500 text-sm">1799 ج.م</div>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow hover:shadow-lg p-4">
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=60" alt="جينز" class="w-full h-64 object-cover rounded-lg">
-        <div class="mt-3 font-medium">بنطال جينز مريح</div>
-        <div class="text-gray-500 text-sm">799 ج.م</div>
-      </div>
-    </div>
-    <img src="1000043250.jpg" alt="تيشرت رياضي"
-    <div class="mt-3 font-medium">تيشرت رياضي احمر</div>
-    <div class="text-red-500 text-sm">500 ج.م</div>
-    <H3>تيشيرت رياضي</H3>
-    <P>500 ج.م</P>
-  </div>
-
-    </div>
-  </section>
-
-  <!-- النشرة البريدية -->
-  <section class="max-w-7xl mx-auto mt-16 bg-gradient-to-tr from-pink-50 to-yellow-50 p-6 rounded-2xl text-center">
-    <h3 class="font-bold text-xl mb-2">اشترك للحصول على خصم 10%</h3>
-    <p class="text-sm text-gray-600 mb-4">انضم إلينا لتصلك أحدث العروض</p>
-    <div class="flex justify-center gap-2">
-      <input type="email" placeholder="أدخل بريدك الإلكتروني" class="px-4 py-2 border rounded w-1/2">
-      <button class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">اشترك</button>
-    </div>
-  </section>
-
-  <!-- التذييل -->
-  <footer class="mt-16 bg-white border-t">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-      <div>
-        <div class="font-bold text-xl">m00 tvrek</div>
-        <p class="text-gray-500 mt-2">ملابس مصممة بعناية — الجودة عنواننا</p>
-      </div>
-      <div class="text-gray-600">
-        <div class="font-semibold">خدمة العملاء</div>
-        <div class="mt-2">اتصل: 0123-456-789</div>
-        <div>البريد: support@m00tvrek.com</div>
-      </div>
-      <div>
-        <div class="font-semibold">تابعنا</div>
-        <div class="mt-2 text-gray-600">روابط الشبكات الاجتماعية</div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>m00 tvrek - متجر الملابس العصري</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-
-  <header class="navbar">
-    <h1 class="logo">m00 tvrek</h1>
-    <nav>
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand"><span class="mark">m00</span> tvrek</div>
+    <nav class="nav">
+      <a href="#home">الرئيسية</a>
+      <a href="#collections">التشكيلات</a>
       <a href="#products">المنتجات</a>
-      <a href="#men">رجال</a>
-      <a href="#women">نساء</a>
-      <a href="#sale">عروض</a>
+      <a href="#about">من نحن</a>
     </nav>
     <div class="actions">
-      <input type="text" placeholder="ابحث..." />
-      <button>🛒</button>
+      <input class="search" placeholder="ابحث..." aria-label="بحث">
+      <button class="cart">🛒<span class="cart-count">0</span></button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="hero">
-    <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?auto=format&fit=crop&w=1600&q=80" alt="عرض أزياء">
-    <div class="overlay">
-      <h2>تشكيلة 2025 الأنيقة</h2>
-      <p>جودة عالية وأحدث صيحات الموضة — تسوق الآن!</p>
-      <a href="#products" class="btn">تسوق الآن</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="hero-inner">
+    <h1>ستايل الشارع بروح جديدة</h1>
+    <p>أزياء عصرية، خامات مريحة، وتصاميم تناسب الشباب</p>
+    <a href="#products" class="btn primary">تسوق الآن</a>
+  </div>
+</section>
 
+<section id="collections" class="container collections">
+  <h2>تشكيلات مختارة</h2>
+  <div class="collections-grid">
+    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=60')"><div class="col-text">الرجالي</div></div>
+    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1503342452485-86f7f4a4b3c8?auto=format&fit=crop&w=800&q=60')"><div class="col-text">النسائي</div></div>
+    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=60')"><div class="col-text">Streetwear</div></div>
+  </div>
+</section>
+
+<main class="container">
   <section id="products" class="products">
     <h2>المنتجات</h2>
     <div class="grid">
+      <!-- product cards -->
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=800&q=60" alt="جاكيت">
-        <h3>جاكيت جلد فاخر</h3>
-        <p>2499 ج.م</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=60" alt="قميص">
-        <h3>قميص قطني كلاسيكي</h3>
-        <p>499 ج.م</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1542062703-6f60f7050fbe?auto=format&fit=crop&w=800&q=60" alt="فستان">
-        <h3>فستان سهرة</h3>
-        <p>1799 ج.م</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=60" alt="جينز">
-        <h3>بنطال جينز مريح</h3>
-        <p>799 ج.م</p>
-      </div>
-      <img src="1000043250.jpg" alt="تيشرت رياضي"
-      <H3>تيشيرت رياضي</H3>
-      <P>500 ج.م</P>
-    </div>
-
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=60" alt="جاكيت ستريت">
+<div class="card-body">
+  <h4>جاكيت ستريت</h4>
+  <div class="price">2599 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت ستريت" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1495121605193-b116b5b09f06?auto=format&fit=crop&w=900&q=60" alt="هودي كلاسيك">
+<div class="card-body">
+  <h4>هودي كلاسيك</h4>
+  <div class="price">899 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20هودي كلاسيك" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="تي شيرت بيزيك">
+<div class="card-body">
+  <h4>تي شيرت بيزيك</h4>
+  <div class="price">349 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20تي شيرت بيزيك" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=60" alt="بنطال جينز">
+<div class="card-body">
+  <h4>بنطال جينز</h4>
+  <div class="price">799 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20بنطال جينز" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="جاكيت بومبر">
+<div class="card-body">
+  <h4>جاكيت بومبر</h4>
+  <div class="price">1299 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت بومبر" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=60" alt="بلوفر خفيف">
+<div class="card-body">
+  <h4>بلوفر خفيف</h4>
+  <div class="price">599 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20بلوفر خفيف" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=60" alt="فستان كاجوال">
+<div class="card-body">
+  <h4>فستان كاجوال</h4>
+  <div class="price">999 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20فستان كاجوال" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=60" alt="شورت صيفي">
+<div class="card-body">
+  <h4>شورت صيفي</h4>
+  <div class="price">299 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20شورت صيفي" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="قميص كاروهات">
+<div class="card-body">
+  <h4>قميص كاروهات</h4>
+  <div class="price">449 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20قميص كاروهات" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1516387131982-3a9f0b1f1f6b?auto=format&fit=crop&w=900&q=60" alt="جاكيت جلدي">
+<div class="card-body">
+  <h4>جاكيت جلدي</h4>
+  <div class="price">2499 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت جلدي" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1526178619714-1f5b7f9f2c3b?auto=format&fit=crop&w=900&q=60" alt="حذاء ستريت">
+<div class="card-body">
+  <h4>حذاء ستريت</h4>
+  <div class="price">1399 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20حذاء ستريت" target="_blank">واتساب</a>
+  </div>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=60" alt="إكسسوار">
+<div class="card-body">
+  <h4>إكسسوار</h4>
+  <div class="price">199 ج.م</div>
+  <div class="actions">
+    <button class="add-cart">أضف إلى السلة</button>
+    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20إكسسوار" target="_blank">واتساب</a>
+  </div>
+</div>
+</div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 m00 tvrek. جميع الحقوق محفوظة.</p>
-  </footer>
+  <section class="testimonials">
+    <h3>آراء العملاء</h3>
+    <div class="test-grid">
+      <blockquote>خدمة ممتازة وجودة عالية — علي.</blockquote>
+      <blockquote>وصلت بسرعة والتغليف كان رائع — سارة.</blockquote>
+      <blockquote>أسعار مناسبة وتصاميم مميزة — محمود.</blockquote>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="about" class="about">
+    <h3>من نحن</h3>
+    <p>m00 tvrek متجر شبابي يهدف لتقديم أزياء الشارع بأعلى جودة وبأسعار معقولة.</p>
+  </section>
+</main>
+
+<section class="subscribe container">
+  <div class="subscribe-inner">
+    <div>
+      <h3>ابقَ على تواصل</h3>
+      <p>اشترك لتصلك العروض الحصرية</p>
+    </div>
+    <form id="subscribeForm">
+      <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+      <button class="btn primary" type="submit">اشترك</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><strong>m00 tvrek</strong><p class="muted">جمال الشارع يلتقي بالأناقة</p></div>
+    <div class="footer-links"><a href="#">شروط الاستخدام</a><a href="#">سياسة الخصوصية</a><a href="#">اتصل بنا</a></div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/201556507666?text=مرحبا%20اود%20طلب%20معلومة%20عن%20m00%20tvrek" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp"></a>
+
+<script src="script.js"></script>
 </body>
 </html>
