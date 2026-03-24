@@ -1,211 +1,97 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>m00 tvrek - Street Fashion</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moo-Store - Premium  Clothes Store</title>
+    <meta name="description" content="Premium clothing store - T-shirts, hoodies, jeans & more. Fast checkout with cart.">
+    
+    <!-- Three.js CDNs -->
+
+    
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="container header-inner">
-    <div class="brand"><span class="mark">m00</span> tvrek</div>
-    <nav class="nav">
-      <a href="#home">الرئيسية</a>
-      <a href="#collections">التشكيلات</a>
-      <a href="#products">المنتجات</a>
-      <a href="#about">من نحن</a>
-    </nav>
-    <div class="actions">
-      <input class="search" placeholder="ابحث..." aria-label="بحث">
-      <button class="cart">🛒<span class="cart-count">0</span></button>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-cow"></i> Moo-Store </h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#cart" class="nav-link" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Filters Overlay -->
+    <div id="filters-overlay" class="filters-overlay">
+        <div class="filters">
+            <button class="filter-btn active" data-category="all"><i class="fas fa-th-large"></i> All</button>
+            <button class="filter-btn" data-category="men"><i class="fas fa-male"></i> Men</button>
+            <button class="filter-btn" data-category="women"><i class="fas fa-female"></i> Women</button>
+        </div>
     </div>
-  </div>
-</header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <h1>ستايل الشارع بروح جديدة</h1>
-    <p>أزياء عصرية، خامات مريحة، وتصاميم تناسب الشباب</p>
-    <a href="#products" class="btn primary">تسوق الآن</a>
-  </div>
-</section>
+    <!-- 2D Products Grid -->
+    <section id="home" class="products-section">
+        <div class="filters-container">
+            <div class="filters">
+                <button class="filter-btn active" data-category="all"><i class="fas fa-th-large"></i> All</button>
+                <button class="filter-btn" data-category="men"><i class="fas fa-male"></i> Men</button>
+                <button class="filter-btn" data-category="women"><i class="fas fa-female"></i> Women</button>
+            </div>
+        </div>
+        <div class="products-grid" id="products-grid">
+            <!-- Products dynamically loaded here -->
+        </div>
+    </section>
 
-<section id="collections" class="container collections">
-  <h2>تشكيلات مختارة</h2>
-  <div class="collections-grid">
-    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=60')"><div class="col-text">الرجالي</div></div>
-    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1503342452485-86f7f4a4b3c8?auto=format&fit=crop&w=800&q=60')"><div class="col-text">النسائي</div></div>
-    <div class="col" style="background-image:url('https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=60')"><div class="col-text">Streetwear</div></div>
-  </div>
-</section>
-
-<main class="container">
-  <section id="products" class="products">
-    <h2>المنتجات</h2>
-    <div class="grid">
-      <!-- product cards -->
-      <div class="card">
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=60" alt="جاكيت ستريت">
-<div class="card-body">
-  <h4>جاكيت ستريت</h4>
-  <div class="price">2599 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت ستريت" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1495121605193-b116b5b09f06?auto=format&fit=crop&w=900&q=60" alt="هودي كلاسيك">
-<div class="card-body">
-  <h4>هودي كلاسيك</h4>
-  <div class="price">899 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20هودي كلاسيك" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="تي شيرت بيزيك">
-<div class="card-body">
-  <h4>تي شيرت بيزيك</h4>
-  <div class="price">349 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20تي شيرت بيزيك" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=60" alt="بنطال جينز">
-<div class="card-body">
-  <h4>بنطال جينز</h4>
-  <div class="price">799 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20بنطال جينز" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="جاكيت بومبر">
-<div class="card-body">
-  <h4>جاكيت بومبر</h4>
-  <div class="price">1299 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت بومبر" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=60" alt="بلوفر خفيف">
-<div class="card-body">
-  <h4>بلوفر خفيف</h4>
-  <div class="price">599 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20بلوفر خفيف" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=60" alt="فستان كاجوال">
-<div class="card-body">
-  <h4>فستان كاجوال</h4>
-  <div class="price">999 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20فستان كاجوال" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=60" alt="شورت صيفي">
-<div class="card-body">
-  <h4>شورت صيفي</h4>
-  <div class="price">299 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20شورت صيفي" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1520975912190-3f9a6af5d60b?auto=format&fit=crop&w=900&q=60" alt="قميص كاروهات">
-<div class="card-body">
-  <h4>قميص كاروهات</h4>
-  <div class="price">449 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20قميص كاروهات" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1516387131982-3a9f0b1f1f6b?auto=format&fit=crop&w=900&q=60" alt="جاكيت جلدي">
-<div class="card-body">
-  <h4>جاكيت جلدي</h4>
-  <div class="price">2499 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20جاكيت جلدي" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1526178619714-1f5b7f9f2c3b?auto=format&fit=crop&w=900&q=60" alt="حذاء ستريت">
-<div class="card-body">
-  <h4>حذاء ستريت</h4>
-  <div class="price">1399 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20حذاء ستريت" target="_blank">واتساب</a>
-  </div>
-</div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=900&q=60" alt="إكسسوار">
-<div class="card-body">
-  <h4>إكسسوار</h4>
-  <div class="price">199 ج.م</div>
-  <div class="actions">
-    <button class="add-cart">أضف إلى السلة</button>
-    <a class="wa" href="https://wa.me/201556507666?text=اهلا%20اود%20طلب%20إكسسوار" target="_blank">واتساب</a>
-  </div>
-</div>
-</div>
+    <!-- Cart Sidebar (unchanged) -->
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items dynamically loaded -->
+        </div>
+        <div class="cart-total">
+            <strong>Total: $<span id="cart-total">0.00</span></strong>
+        </div>
+        <button class="btn btn-primary" id="checkout-btn">Checkout</button>
     </div>
-  </section>
 
-  <section class="testimonials">
-    <h3>آراء العملاء</h3>
-    <div class="test-grid">
-      <blockquote>خدمة ممتازة وجودة عالية — علي.</blockquote>
-      <blockquote>وصلت بسرعة والتغليف كان رائع — سارة.</blockquote>
-      <blockquote>أسعار مناسبة وتصاميم مميزة — محمود.</blockquote>
-    </div>
-  </section>
+    <!-- Overlay for cart modal -->
+    <div id="overlay" class="overlay hidden"></div>
 
-  <section id="about" class="about">
-    <h3>من نحن</h3>
-    <p>m00 tvrek متجر شبابي يهدف لتقديم أزياء الشارع بأعلى جودة وبأسعار معقولة.</p>
-  </section>
-</main>
+    <!-- Footer with Social & WhatsApp -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>For inquiries & support</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://wa.me/+201556507666?text=Hi%20Moo-Store!" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp +201556507666
+                    </a>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/mòmen-tarek-983242392" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/momen1010" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/m00_tvrek/?__pwa=1#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 Moo-Store. All rights reserved.</p>
+        </div>
+    </footer>
 
-<section class="subscribe container">
-  <div class="subscribe-inner">
-    <div>
-      <h3>ابقَ على تواصل</h3>
-      <p>اشترك لتصلك العروض الحصرية</p>
-    </div>
-    <form id="subscribeForm">
-      <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
-      <button class="btn primary" type="submit">اشترك</button>
-    </form>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div><strong>m00 tvrek</strong><p class="muted">جمال الشارع يلتقي بالأناقة</p></div>
-    <div class="footer-links"><a href="#">شروط الاستخدام</a><a href="#">سياسة الخصوصية</a><a href="#">اتصل بنا</a></div>
-  </div>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/201556507666?text=مرحبا%20اود%20طلب%20معلومة%20عن%20m00%20tvrek" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="WhatsApp"></a>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
